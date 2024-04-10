@@ -66,6 +66,17 @@ nav.navlinks li a:active {
   word-spacing: 3px;
   color: #eeeeee;
   text-align: center;
+  letter-spacing: 3px;
+  animation: moveup 1s ease;
+}
+@keyframes moveup {
+  from {
+    font-size: 15px;
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 #home .welcome img {
   width: auto;
