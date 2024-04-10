@@ -359,7 +359,7 @@ footer {
 /* media query for from 760px up to 960px  */
 @media (max-width: 960px) {
   header {
-    padding: 15px 50px 15px;
+    padding: 15px 20px 15px;
     top: 0;
     transition: top 1s;
   }
@@ -431,6 +431,6 @@ footer {
     box-shadow: 10px 10px #bc7af9;
   }
   #about {
-    padding: 4rem 3.5rem 4rem;
+    padding: 4rem 2rem 4rem;
   }
 }
