@@ -58,6 +58,7 @@ nav.navlinks li a:active {
   padding-bottom: 30px;
   text-align: center;
 }
+
 #home .welcome h1 {
   font-family: "Sriracha", cursive;
   padding-top: 8rem;
@@ -69,7 +70,6 @@ nav.navlinks li a:active {
 #home .welcome img {
   width: auto;
   height: 250px;
-  z-index: 0;
 }
 #home .detail h2,
 h3 {
@@ -284,7 +284,7 @@ footer {
     padding-bottom: 30px;
   }
   #home .welcome h1 {
-    padding-top: 5rem;
+    padding-top: 7.6rem;
     font-size: 33px;
   }
   #home .welcome img {

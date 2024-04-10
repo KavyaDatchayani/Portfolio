@@ -2,7 +2,7 @@ var oldScroll = window.scrollY;
 var headers = document.querySelectorAll("header");
 const nav = document.getElementById("icontoggle");
 const navLinks = document.getElementById("navbar");
-
+const welcome = document.querySelector("div > .welcome > h1");
 
 
 window.onscroll = function () {
@@ -32,4 +32,6 @@ nav.addEventListener("click", () => {
     }
 
 });
+
+
 
