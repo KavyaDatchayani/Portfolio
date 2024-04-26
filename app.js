@@ -1,15 +1,15 @@
 const express = require("express");
-require('dotenv').config();
-const app = express();
 
+const app = express();
+require('dotenv').config();
 app.use(express.static("public"));
 
 
 
 
 app.get("/", (req, res) => {
-
     res.sendFile(__dirname + "/index.html");
+
 });
 
 

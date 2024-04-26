@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Geologica:wght@100..900&family=Sriracha&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +14,7 @@ header {
   text-align: right;
   padding: 30px;
   top: 0;
+  z-index: 1;
   transition: top 0.3s;
 }
 
@@ -60,23 +63,30 @@ nav.navlinks li a:active {
 }
 
 #home .welcome h1 {
-  font-family: "Sriracha", cursive;
-  padding-top: 8rem;
-  font-size: 53px;
-  word-spacing: 3px;
+  font-family: "Allura", cursive;
+  padding-top: 8.5rem;
+  font-size: 60px;
   color: #eeeeee;
   text-align: center;
   letter-spacing: 3px;
-  animation: moveup 1s ease;
 }
-@keyframes moveup {
-  from {
-    font-size: 15px;
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
+
+#home .welcome h2 {
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  color: white;
+  text-align: center;
+}
+#home .welcome i#ghost1 {
+  color: #ffffff;
+  position: relative;
+  margin-top: 10px;
+  font-size: 30px;
+  z-index: 0;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+  animation: jump 1s infinite alternate;
 }
 #home .welcome img {
   width: auto;
@@ -89,10 +99,10 @@ h3 {
   letter-spacing: 3px;
 }
 #home .detail h3 {
-  padding: 10px 0 0;
+  padding: 40px 0 0;
 }
 #home .detail h2 {
-  padding: 15px 0 30px;
+  padding: 5px 0 30px;
 }
 #home .detail p {
   padding: 40px 17rem 40px;
@@ -104,21 +114,28 @@ h3 {
 /* project */
 
 #project {
+  position: relative;
   background-color: #fefbf6;
   padding-bottom: 5rem;
 }
+.projectcontent img.messagearrow {
+  z-index: 0;
+  width: 100px;
+  height: 100px;
+  animation: jump 1s infinite alternate;
+}
 .projectcontent p {
-  padding: 7rem 17rem 5rem;
+  padding: 7rem 17rem 0;
   text-align: left;
   color: #31363f;
   word-spacing: 5px;
   line-height: 25px;
 }
 .projectcontent p span {
-  color: #a8cd9f;
+  color: #fe4176;
+  padding: 3px;
   cursor: pointer;
   word-spacing: 2px;
-  text-shadow: 1px solid #dfccfb;
 }
 
 .container {
@@ -165,11 +182,29 @@ h3 {
   padding: 4rem 9rem 4rem;
 }
 #about h3 {
-  color: #bc7af9;
+  color: #fefbf6;
   font-family: "Sriracha", cursive;
   text-align: left;
   padding: 20px 0 20px;
   letter-spacing: 0;
+}
+#about h3 span.me {
+  color: #31363f;
+}
+
+#about h3 i#ghost {
+  color: #000000;
+  position: relative;
+  z-index: 0;
+  animation: jump 1s infinite alternate;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 #about .para {
   padding: 20px 0 40px 0;
@@ -182,7 +217,8 @@ h3 {
   line-height: 25px;
 }
 #about .para p span {
-  color: #bc7af9;
+  color: #fe4176;
+  cursor: pointer;
 }
 /* contact */
 #contact {
@@ -201,7 +237,7 @@ h3 {
   border-radius: 8px;
   background-color: #a8cd9f;
   color: #ffffff;
-  padding: 8px 50px 8px;
+  padding: 8px 20px 8px;
   transition: all 1s ease;
 }
 #contact p a:hover {
@@ -246,6 +282,7 @@ h3 {
   color: #d5ffe4;
   box-shadow: 5px 5px 2px 0 #dfccfb;
 }
+
 /* footer */
 
 footer {
@@ -299,6 +336,9 @@ footer {
     padding-top: 7.6rem;
     font-size: 33px;
   }
+  #home .welcome h2 {
+    font-size: 30px;
+  }
   #home .welcome img {
     width: 250px;
     height: 250px;
@@ -319,7 +359,7 @@ footer {
     padding-bottom: 5rem;
   }
   .projectcontent p {
-    padding: 7rem 2rem 5rem;
+    padding: 7rem 2rem 0;
   }
 
   .container {
@@ -411,6 +451,9 @@ footer {
   #home .welcome h1 {
     font-size: 43px;
   }
+  #home .welcome h2 {
+    font-size: 40px;
+  }
   #home .welcome img {
     width: 250px;
     height: 250px;
@@ -430,7 +473,7 @@ footer {
     padding-bottom: 5rem;
   }
   .projectcontent p {
-    padding: 7rem 3rem 5rem;
+    padding: 7rem 3rem 0;
   }
 
   .container {
@@ -444,5 +487,14 @@ footer {
   }
   #about {
     padding: 4rem 2rem 4rem;
+  }
+}
+@keyframes moveup {
+  from {
+    font-size: 15px;
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }

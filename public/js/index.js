@@ -2,7 +2,16 @@ var oldScroll = window.scrollY;
 var headers = document.querySelectorAll("header");
 const nav = document.getElementById("icontoggle");
 const navLinks = document.getElementById("navbar");
-const welcome = document.querySelector("div > .welcome > h1");
+const waLink = document.getElementById("wa-link");
+// const rows = document.querySelectorAll(".row")
+
+// rows.style.animation = "moveup 1s ease";
+
+waLink.setAttribute('href', 'https://wa.me/6383457208');
+
+// waLink.setAttribute('href', `https://wa.me/${mobileNumber}`);
+
+
 
 
 window.onscroll = function () {
