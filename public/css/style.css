@@ -99,7 +99,7 @@ nav.navlinks li a:active {
   font-family: "Allura", cursive;
   padding-top: 8.5rem;
   font-size: 60px;
-  color: #eeeeee;
+  color: #ffffff;
   text-align: center;
   letter-spacing: 3px;
 }
@@ -534,4 +534,20 @@ footer {
   to {
     transform: translateY(0%);
   }
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #dfccfb;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #bc7af9;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
