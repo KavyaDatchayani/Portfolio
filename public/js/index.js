@@ -1,27 +1,20 @@
 var oldScroll = window.scrollY;
-var headers = document.querySelectorAll("header");
+var mainnavbar = document.querySelectorAll("#mainnavbar");
 const nav = document.getElementById("icontoggle");
 const navLinks = document.getElementById("navbar");
 const waLink = document.getElementById("wa-link");
-// const rows = document.querySelectorAll(".row")
 
-// rows.style.animation = "moveup 1s ease";
 
 waLink.setAttribute('href', 'https://wa.me/6383457208');
 
-// waLink.setAttribute('href', `https://wa.me/${mobileNumber}`);
-
-
-
-
 window.onscroll = function () {
     var currentScroll = window.scrollY;
-    headers.forEach(function (header) {
+    mainnavbar.forEach(function (mainnavbar) {
         if (oldScroll > currentScroll) {
-            header.style.top = "0";
+            mainnavbar.style.top = "0";
 
         } else {
-            header.style.top = "-100%";
+            mainnavbar.style.top = "-100%";
 
         }
     });
